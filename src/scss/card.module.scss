@@ -1,0 +1,50 @@
+@import "./variable";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    gap: 2rem;
+    .card{
+        padding: 1.5rem;
+        max-width: 300px;
+        border-radius: 1rem;
+        text-align: center;
+        box-shadow: 5px 5px 5px 5px black;
+    }
+    img{
+        width: 45%;
+        margin: 1rem;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    h1{
+        color: red;
+    }
+    h2{
+        color: green;
+    }
+    .btn-container{
+        button{
+            border-radius: .3rem;
+            color: white;
+            cursor: pointer;
+            border: none;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+        &--small{
+            background-color: $olive;
+            padding: .4rem;
+        }
+        &--large{
+            background-color: $darkPink;
+            padding: .4rem 1rem;
+            margin-left: .4rem;
+        }
+    }
+}
